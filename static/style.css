@@ -1,0 +1,167 @@
+body {
+    padding-top: 20px;
+}
+
+header {
+    background-image: url(/static/backgroundpic.jpg);
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    color: white;
+    font-size: 6em;
+}
+
+header h2 {
+    color: white;
+    font-size: 3em;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.btn-controls {
+    display: flex;
+    justify-content: center;
+    gap: 23px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.container span {
+    color: rgb(248, 142, 4);
+}
+
+.tables-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nutri-facts-table {
+    border: 1px solid #333;
+    padding: 1em;
+    margin: 0 1em;
+    width: 80%; 
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+}
+
+.summary-table table, .nutri-facts-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.summary-table tr:first-child {
+    border-top: solid 1px gray;
+}
+
+.summary-table tr:last-child {
+    border-bottom: solid 1px gray;
+}
+
+.summary-table tr td:first-child,
+.summary-table tr th:first-child {
+    border-left: solid 1px gray;
+}
+
+.summary-table tr td:last-child,
+.summary-table tr th:last-child {
+    border-right: solid 1px gray;
+}
+
+.summary-table th, 
+.summary-table td { 
+    padding: 8px;
+    text-align: left;
+}
+
+.nutri-facts-table td{
+    border-bottom: 1px solid gray;
+    padding: 8px 0px;
+}
+
+.nutri-facts-table tr:last-child td{
+    border-bottom: none;
+    padding: 0px;
+    padding-top: 8px;
+}
+
+.nutri-facts-table tr:first-child {
+    border-bottom: solid 10px gray;
+}
+
+.nutri-facts-table tr:nth-child(2) th {
+    padding-top: 8px;
+}
+
+.nutri-facts-table tr td:nth-child(2) {
+    text-align: right;
+}
+
+.summary-table{
+    margin-bottom: 40px;
+}
+
+.summary-table th {
+    background-color: #f0f0f0;
+}
+
+.nutri-facts-table .indent {
+    padding-left: 20px;
+}
+
+.footnote {
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+
+tr td.calories {
+    font-size: 2em;
+    padding: 0px;
+}
+
+.calories span {
+    color: black;
+}
+
+.small-info {
+    text-align: right;
+}
+
+.space-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+#ingredients {
+    width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    gap: 40px;
+}
+
+.left{
+    flex: 1 1 48%;
+}
+
+.right{
+    flex: 1 1 48%;
+}
+
+.btn-primary{
+    background-color: orange;
+    border-color: orange;
+    &:hover, &:active, &:focus{
+        background-color: rgb(234, 189, 105);
+        border-color: rgb(234, 189, 105);
+    }
+}
